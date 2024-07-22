@@ -1,0 +1,2 @@
+*.ipynb linguist-language=R
+*.jags linguist-language=Stan
