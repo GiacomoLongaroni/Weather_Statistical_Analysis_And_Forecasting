@@ -4,7 +4,7 @@
 **Project**: Advanced Statistics for Physics Analysis  
 **Tools**: R, JAGS, forecast, ARPAV dataset  
 
-<img src="./Plots/distribution.png" alt="Constant Model Posterior" width="300">
+<img src="./Plots/distribution.png" alt="Constant Model Posterior" width="600">
 
 ## Overview
 
@@ -32,9 +32,9 @@ The ARPAV dataset is cleaned and prepared, handling missing values and outliers 
 ### Bayesian Models
 Both constant and linear models are fitted using JAGS, with posterior distributions examined for validation.
 
-<img src="./Plots/markov.png" alt="Linear Model Posterior" width="300">
+<img src="./Plots/markov.png" alt="Linear Model Posterior" width="600">
 
 ### Time Series Forecasting
 The `forecast` package is employed to predict temperature trends using an optimized ARIMA model.
 
-<img src="./Plots/forecasting.png" alt="Forecasting Model" width="300">
+<img src="./Plots/forecasting.png" alt="Forecasting Model" width="600">
