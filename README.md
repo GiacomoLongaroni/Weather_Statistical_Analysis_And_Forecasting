@@ -6,8 +6,9 @@
 
 
 <div align="center">
-  <img src="./Plots/distribution.png" alt="Constant Model Posterior" width="600">
+ <img src="./Plots/forecasting.png" alt="Forecasting Model" width="500">
 </div>
+
 
 ## Overview
 
@@ -28,10 +29,7 @@ This project applies Bayesian statistical analysis on ARPAV weather data using R
  <img src="./Plots/markov.png" alt="Linear Model Posterior" width="400"><img src="./Plots/regression.png" alt="Linear Model Posterior" width="500">
 </div>
 
-3. **Time Series Forecasting**: Uses the `forecast` package in R for ARIMA-based weather forecasting.
-<div align="center">
- <img src="./Plots/forecasting.png" alt="Forecasting Model" width="500">
-</div>
- 
-5. **Model Evaluation**: Assessed using posterior distributions, hypotesis test and quality metrics over the regressions.
+2. **Time Series Forecasting**: Uses the `forecast` package in R for ARIMA-based weather forecasting.
+
+4. **Model Evaluation**: Assessed using posterior distributions, hypotesis test and quality metrics over the regressions.
 
