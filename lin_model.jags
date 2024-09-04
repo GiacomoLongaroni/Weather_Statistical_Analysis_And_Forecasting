@@ -13,13 +13,13 @@ model {
         MED_mean[i] ~ dnorm(mu_ava[i], tau_ava) 
     }
     #priors
-    a_min ~ dnorm(12, 1e-1)
-    b_min ~ dnorm(0, 1e-5)
+    a_min ~ dnorm(6, 0.2)
+    b_min ~ dnorm(0.3, 0.01)
     sigma_min ~ dexp(0.0001)
-    a_max ~ dnorm(12, 1e-1)
-    b_max ~ dnorm(0, 1e-5)
+    a_max ~ dnorm(17, 0.2)
+    b_max ~ dnorm(0.3, 0.01)
     sigma_max ~ dexp(0.0001)
-    a_ava ~ dnorm(12, 1e-1)
-    b_ava ~ dnorm(0, 1e-5)
+    a_ava ~ dnorm(11.5, 0.2)
+    b_ava ~ dnorm(0.03, 0.01)
     sigma_ava ~ dexp(0.0001)
 }
