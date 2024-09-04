@@ -1,42 +1,40 @@
+# Advanced Statistics for Physics Analysis
 
-**Author**: Lorenzo Cavezza, Giacomo Longaroni  
-**Project**: Advanced Statistics for Physics Analysis group  
+**Authors**: Lorenzo Cavezza, Giacomo Longaroni  
+**Project**: Advanced Statistics for Physics Analysis  
 **Tools**: R, JAGS, forecast, ARPAV dataset  
 
-![Constant Model Posterior](./Plots/distribution.png)
+<img src="./Plots/distribution.png" alt="Constant Model Posterior" width="300">
 
 ## Overview
 
-This project involves a Bayesian statistical analysis of weather data from ARPAV, using statistical models implemented in R. The analysis includes Bayesian modeling with JAGS and time series forecasting with the `forecast` package. The study explores different models for predicting weather patterns including constant and linear regression implememted with MCMC and time forecasting using ARIMA models.
+This project applies Bayesian statistical analysis on ARPAV weather data using R. It explores models for predicting weather patterns, combining Bayesian modeling (via JAGS) and time series forecasting (using the `forecast` package). The models include constant and linear regression with MCMC, alongside ARIMA-based time forecasting.
 
+## Repository Content
 
+- **`Cavezza_Longaroni.ipynb`**: Jupyter notebook containing data loading, preprocessing, statistical modeling, and forecasting.
+- **`const_model.jags`**: JAGS script for constant regression in Bayesian analysis.
+- **`lin_model.jags`**: JAGS script for linear regression in Bayesian analysis.
+- **`datiarpav`**: Folder containing the ARPAV dataset used.
+- **`Plots`**: Directory for generated plots and visualizations.
 
-## Repo content
+## Key Components
 
-- **`Cavezza_Longaroni.ipynb`**: Notebook containing data loading, preprocessing, statistical modeling, and forecasting.
-- **`const_model.jags`**: JAGS code for a constant regression used in Bayesian analysis.
-- **`lin_model.jags`**: JAGS code for a linear regression used in Bayesian analysis.
-- **`datiarpav`**: The folder containing the ARPAV dataset used for analysis.
-- **`Plots`**: Directory storing the generated plots and visualizations used in the analysis.
+1. **Bayesian Analysis**: Utilizes JAGS for constant and linear regression models on weather data.
+2. **Time Series Forecasting**: Uses the `forecast` package in R for ARIMA-based weather prediction.
+3. **Model Evaluation**: Assessed using posterior predictive checks and diagnostic plots.
 
-## Key Concepts
-
-1. **Bayesian Analysis**: Implemented using JAGS, focusing on constant and linear models for weather data analysis.
-2. **Time Series Forecasting**: Implemented using the `forecast` package in R to predict future weather patterns.
-3. **Model Evaluation**: Various diagnostic tools and plots are used to evaluate the performance of the models.
-
-## Key Files
+## Detailed Steps
 
 ### Data Preprocessing
-The ARPAV dataset is loaded and cleaned, ensuring that missing values and outliers are appropriately handled.
+The ARPAV dataset is cleaned and prepared, handling missing values and outliers efficiently.
 
 ### Bayesian Models
-Both models are implemented using JAGS, with results compared and validated through posterior predictive checks.
-![Linear Model Posterior](./Plots/markov.png)
+Both constant and linear models are fitted using JAGS, with posterior distributions examined for validation.
 
+<img src="./Plots/markov.png" alt="Linear Model Posterior" width="300">
 
 ### Time Series Forecasting
-Using the `forecast` package, the temperature time series is forecasted with an optimized arima model.
-![Linear Model Posterior](./Plots/forecasting.png)
+The `forecast` package is employed to predict temperature trends using an optimized ARIMA model.
 
-
+<img src="./Plots/forecasting.png" alt="Forecasting Model" width="300">
